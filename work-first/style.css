@@ -1,0 +1,12 @@
+:root {
+  --100vw: 100vw;
+  --100vh: 100vh;
+}
+
+body {
+  background-image: url(https://picsum.photos/200/300/?blur);
+  background-repeat: no-repeat;
+  background-size: var(--100vw) var(--100vh);
+  width: var(--100vw);
+  height: var(--100vh);
+}
