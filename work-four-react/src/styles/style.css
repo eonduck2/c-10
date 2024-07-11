@@ -1,0 +1,79 @@
+:root {
+  --100vw: 100vw;
+  --100vh: 100vh;
+  --100p: 100%;
+  --50p: 50%;
+}
+
+body {
+  width: var(--100vw);
+  height: var(--100vh);
+  overflow: hidden;
+}
+
+#root {
+  background-image: url(https://picsum.photos/id/1002/1440/1024);
+  background-repeat: no-repeat;
+  background-size: var(--100vw) var(--100vh);
+  width: var(--100p);
+  height: var(--100p);
+}
+
+#wrapper {
+  padding: 10%;
+  padding-top: 10%;
+  width: 100%;
+  height: 81.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contents-container {
+  width: var(--50p);
+  height: 30%;
+  border-radius: 30px;
+  box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(30px);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  padding-left: 6.25rem;
+  padding-top: 100px;
+}
+
+.contents-container::-webkit-scrollbar {
+  display: none;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  width: var(--100p);
+  height: 20%;
+}
+
+.span-container {
+  width: var(--100p);
+  height: 80%;
+}
+
+h1 {
+  width: 40%;
+}
+
+hr {
+  width: var(--50p);
+}
+
+#arrow-container {
+  width: 62%;
+  height: 3%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#arrow {
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
